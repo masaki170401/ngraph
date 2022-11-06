@@ -411,7 +411,7 @@ if(NOT WIN32 AND NGRAPH_NATIVE_ARCH_ENABLE)
             "Build target architecture was overridden. The resulting build might not work correctly on the host CPU.")
     endif()
 
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=${NGRAPH_TARGET_ARCH}")
+    #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=${NGRAPH_TARGET_ARCH}")
 endif()
 
 if (DEFINED NGRAPH_TUNE_ARCH)
